@@ -1,0 +1,141 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fafaeb;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.header {
+    font-family: "Lobster", sans-serif;
+    cursor: pointer;
+    color: #edf0f1;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #24252a;
+}
+
+.button-group {
+    margin-top: 250px;
+    margin-left: 150px;
+}
+
+.Gen-Button {
+    border: none;
+    width: 230px;
+    height: 60px;
+    background: -webkit-linear-gradient(right, #388087, #6fb3b8, #388087, #6fb3b8);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: -2px -2px 4px #ffffff, 2px 2px 13px #000000
+}
+
+.Gen-Button:hover {
+    transition: all .2s;
+    scale: 0.999;
+    opacity: 80%;
+    box-shadow: none;
+}
+
+.quote-container-box {
+    background-color: #388087; 
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    bottom: 40%;;
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    box-shadow: -3px -3px 5px #ffffff, 3px 3px 15px #000000;
+}
+
+.quote-container-box h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-container-box h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: #fff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-container-box blockquote {
+    font-size: 26px;
+    min-height: 110px;
+    font-family: "Merriweather", sans-serif;
+}
+
+.quote-container-box blockquote::before, .quote-container-box blockquote::after {
+    content: '"';
+}
+
+.quote-container-box span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+
+}
+
+.quote-container-box span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top:50%;
+    left: -30px;
+}
+
+.source-code {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 80vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.line-div {
+    margin-top: 30vh;
+}
+.src-btn {
+    border: none;
+    width: 150px;
+    height: 40px;
+    background: #388087;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
